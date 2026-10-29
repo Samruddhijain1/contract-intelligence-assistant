@@ -18,6 +18,8 @@ def main():
         ("iter4 bigrams", 1200, 200, 2, 0.08),
         ("iter5 lower abstention threshold", 1200, 200, 2, 0.03),
     ]
+    best_score = -1.0
+    best_name = None
     for name, size, overlap, ngram, threshold in trials:
         chunks = []
         for doc in docs:
@@ -31,9 +33,16 @@ def main():
             gold = {Path(s["file_path"]).name.lower() for s in q.get("snippets", [])}
             hits += bool(retrieved & gold)
         metric = hits / len(tests) if tests else 0.0
+        if best_name is None or metric > best_score:
+            decision = "ACCEPT: best training hit rate so far"
+            best_score = metric
+            best_name = name
+        else:
+            decision = "REJECT: no improvement over best training hit rate"
+
         log.append({"iteration": name, "train_queries": len(tests), "document_hit_rate_at_5": metric,
                     "chunk_chars": size, "overlap_chars": overlap, "ngram_max": ngram,
-                    "threshold": threshold, "decision": "recorded; compare against baseline before selecting"})
+                    "threshold": threshold, "decision": decision})
     out = Path("data/results"); out.mkdir(parents=True, exist_ok=True)
     (out / "experiment_log.json").write_text(json.dumps(log, indent=2), encoding="utf-8")
     print(json.dumps(log, indent=2))

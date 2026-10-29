@@ -83,6 +83,8 @@ The larger-chunk configuration and unigram configuration achieved 0.9929, matchi
 
 The observed improvements are limited to document hit rate on training data. Further evaluation using character-level precision and recall, abstention performance, and held-out test data is required before claiming that any configuration is superior overall.
 
+The baseline achieved a training document hit rate at k = 5 of 0.9929. Three configurations reached 1.0000: smaller chunks, bigram features, and bigram features with a lower relevance threshold. The acceptance rule selects configurations using training document hit rate only. These results do not establish improvements in character-level retrieval or abstention, which require separate evaluation.
+
 ## 7. Error Analysis
 
 The evaluation results indicate that only a small proportion of annotated answer characters are covered by retrieved passages. At k = 5, mean character recall is 6.56% on train and 12.00% on test.
