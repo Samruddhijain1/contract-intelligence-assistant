@@ -43,5 +43,3 @@ pytest -q
 - The starter's retrieval offsets are passage offsets in the original file. Confirm that the benchmark's annotated answer text matches `document[start:end]` before trusting evaluation.
 - For a production legal workflow, add access controls, audit logs, stronger abstention calibration, and legal review.
 
-## AI tool usage
-Disclose the actual tools used to assist development and describe which portions they helped with. Do not claim independent work for generated code. Be prepared to explain and modify every component.
