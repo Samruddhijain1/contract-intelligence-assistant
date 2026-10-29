@@ -14,7 +14,7 @@ def main():
         ("baseline", 1200, 200, 1, 0.08),
         ("iter1 smaller chunks", 800, 120, 1, 0.08),
         ("iter2 larger chunks", 1600, 250, 1, 0.08),
-        ("iter3 unigram", 1200, 200, 1, 0.08),
+        ("iter3 higher overlap", 1200, 300, 1, 0.08),
         ("iter4 bigrams", 1200, 200, 2, 0.08),
         ("iter5 lower abstention threshold", 1200, 200, 2, 0.03),
     ]
@@ -24,7 +24,13 @@ def main():
         chunks = []
         for doc in docs:
             chunks.extend(chunk_document(doc, size, overlap))
-        trial_cfg = dict(cfg, chunk_chars=size, overlap_chars=overlap, ngram_max=ngram)
+        trial_cfg = dict(
+        cfg,
+        chunk_chars=size,
+        overlap_chars=overlap,
+        ngram_max=ngram,
+        min_score=threshold
+)
         engine = ContractRetriever(chunks, trial_cfg)
         hits = 0
         for q in tests:
