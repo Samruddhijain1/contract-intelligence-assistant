@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "query": "What is the CEO's personal home address?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 2,
+    "query": "What is the employee's personal bank account password?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 3,
+    "query": "What was the weather on the signing date?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 4,
+    "query": "What is the private phone number of the counterparty's CEO?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 5,
+    "query": "What is the audience rating of the show next year?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 6,
+    "query": "How many viewers will watch the content in 2030?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 7,
+    "query": "What is the personal medical history of the signatory?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 8,
+    "query": "What is the password for the partner's internal system?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 9,
+    "query": "What is the exact market share of the licensee today?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 10,
+    "query": "What is the private home address of the company's legal counsel?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 11,
+    "query": "Which actor will win an award next year?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 12,
+    "query": "What is the current stock price of the counterparty?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 13,
+    "query": "What are the signatory's personal political views?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 14,
+    "query": "What is the password to the content delivery network?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 15,
+    "query": "How many people watched the premiere yesterday?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 16,
+    "query": "What is the private email password of the producer?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 17,
+    "query": "What is the current exchange rate used by the finance team?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 18,
+    "query": "What is the personal passport number of the signatory?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 19,
+    "query": "What is the weather forecast for the release date?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 20,
+    "query": "Which new show will the company acquire in five years?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 21,
+    "query": "What is the private salary of the counterparty's CEO?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 22,
+    "query": "What is the current subscriber count of the platform?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 23,
+    "query": "What is the personal tax identification number of the signatory?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 24,
+    "query": "What is the password to the company's payroll database?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 25,
+    "query": "Which team will win the championship next season?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 26,
+    "query": "What is the private home address of the production director?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 27,
+    "query": "What is the current advertising rate charged by a competitor?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 28,
+    "query": "How many employees will the partner hire next year?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 29,
+    "query": "What is the personal credit card number of the signatory?",
+    "label": "unanswerable"
+  },
+  {
+    "id": 30,
+    "query": "What is the unpublished sequel's final plot twist?",
+    "label": "unanswerable"
+  }
+]
