@@ -36,10 +36,12 @@ pytest -q
 5. `improve.py`: baseline plus five recorded train-only configuration experiments.
 6. `unanswerable_queries.json`: initial 30 labeled questions; do not edit after committing.
 
-## Assumptions and limitations
-- This starter uses TF-IDF lexical retrieval, not an LLM. It is inexpensive and reproducible, but may miss paraphrases and cross-references.
-- A relevance threshold is a heuristic, not a calibrated probability. The default should be tuned on train only.
-- The evaluation starter reports document hit rate. The assignment requires character-level precision and recall; these must be implemented and validated against the benchmark's actual offset field names before claiming full compliance.
-- The starter's retrieval offsets are passage offsets in the original file. Confirm that the benchmark's annotated answer text matches `document[start:end]` before trusting evaluation.
-- For a production legal workflow, add access controls, audit logs, stronger abstention calibration, and legal review.
+## Assumptions and Limitations
 
+- The system uses TF-IDF-based lexical retrieval instead of an LLM to keep it simple, lightweight, and reproducible.
+- Contract documents are divided into overlapping chunks to improve passage retrieval while preserving original character offsets.
+- The relevance threshold is a heuristic, not a probability, and should be tuned using training data only.
+- TF-IDF may miss paraphrases, semantic similarities, and complex legal cross-references.
+- Character-level precision and recall are used to evaluate retrieval quality against annotated benchmark spans.
+- The system retrieves contract evidence but does not provide legal advice or guarantee legal correctness.
+- For production use, additional access controls, audit logs, stronger abstention, and legal review would be required.
